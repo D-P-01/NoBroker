@@ -1,0 +1,128 @@
+.all-posts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-container input {
+    width: 20%;
+    padding: 10px 2px;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .filter-container button {
+    padding: 10px 2px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .filter-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .post-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+    background-color: white;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-10px); /* Lift up the card on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow effect on hover */
+  }
+
+  
+  .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .post-details {
+    padding: 1rem;
+  }
+  
+  .post-details p {
+    margin: 0.5rem 0;
+  }
+  
+  .post-details button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .post-details button:hover {
+    background-color: #218838;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .pagination button {
+    /* padding: 0.5rem 1rem;
+    margin: 0 0.25rem; */
+    width: 100px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .pagination button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+
+  button{
+    
+  }
